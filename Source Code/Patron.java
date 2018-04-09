@@ -5,20 +5,23 @@ public class Patron {
 
 	private String name;
 	private String email;
+	private String residency;
 	
 		//Constructor
-	public Student ( String argName, String argEmail, String argResidency) {
-		name=argName;
-		email=argEmail;
-		residency=arg
+	public Patron(String name, String email, String residency) {
+		this.name=name;
+		this.email=email;
+		this.residency=residency;
+	}
 		
 		
 		
 //GET ~~~
 	public  String getName (){
-		return name;
+		return this.name;
 	}
 	
 	public  String getEmail () {
-		 return email;
+		 return this.email;
 	}
+}
